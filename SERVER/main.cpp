@@ -112,7 +112,7 @@ void ClientHandlerThread(int ID)  // ID = the index in SOCKET Connections Array
 		if (!ProcessPacket(ID, PacketType))  // Process the Packet
 			break;  // Break out if the packet is not properly process
 	}
-	std::cout << "[ Lost Connection to Client {" << ID << "} ]" << std::endl;
+	std::cout << "[ Lost Connection to Client {" << (ID + 1) << "} ]" << std::endl;
 	closesocket(Connections[ID]);
 }
 

@@ -4,6 +4,7 @@
 #pragma comment(lib, "ws2_32.lib")
 #include <WinSock2.h>
 #include <iostream>
+#include "Packets.h"
 
 SOCKET Connections[100];
 int ConnectionCounter = 0;
